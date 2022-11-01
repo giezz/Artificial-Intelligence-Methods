@@ -130,6 +130,7 @@ def sim_distance(critics, first_critic_name, second_critic_name):
 
 
 # FIXME доделать
+
 def top_matches(critics, critic_name):
     critics_coefs = []
     for key in critics.keys():
