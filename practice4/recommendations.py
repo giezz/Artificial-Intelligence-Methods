@@ -117,23 +117,23 @@ def sim_distance(critics, first_critic_name, second_critic_name):
             else:
                 pass
 
-    print(first_crit_dict)
-    print(second_crit_dict)
-    print(c_1_i)
-    print(c_2_i)
+    # print(first_crit_dict)
+    # print(second_crit_dict)
+    # print(c_1_i)
+    # print(c_2_i)
     quadratic_sum = 0
     for i in range(len(c_1_i)):
         quadratic_sum += (c_1_i[i] - c_2_i[i]) ** 2
     P = 1 / (1 + math.sqrt(quadratic_sum))
-    print(P)
+    # print(P)
     return P
 
 
-# FIXME доделать
-
 def top_matches(critics, critic_name):
-    critics_coefs = []
+    critics_coefs = {}
     for key in critics.keys():
         if critic_name != key:
-            critics_coefs.append(sim_pearson(critics, critic_name, key))
+            critics_coefs[key] = sim_pearson(critics, critic_name, key)
+    critics_coefs = dict(sorted(critics_coefs.items(), key=lambda item: item[1]))
+    critics_coefs = dict(critics_coefs.items().__reversed__())
     print(critics_coefs)
