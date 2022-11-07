@@ -5,7 +5,7 @@ from collections import Counter
 
 
 def parsing():
-    url = "https://www.gismeteo.ru/weather-kirov-4292/"
+    # url = "https://www.gismeteo.ru/weather-kirov-4292/"
     # request = requests.get(url)
     # soup = bs(request.text, "html.parser")
 
