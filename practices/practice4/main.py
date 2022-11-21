@@ -23,7 +23,7 @@ def print_plots(film1, film2):
 
 
 if __name__ == '__main__':
-    print_plots('Зима в Простоквашино', 'Ёжик в тумане')
+    print_plots('Каникулы в Простоквашино', 'Ёжик в тумане')
     print(sim_distance(critics, 'Кот Матроскин', 'Пёс Шарик'))
     print(sim_pearson(critics, 'Кот Матроскин', 'Пёс Шарик'))
     top_matches(critics, 'Кот Матроскин')
