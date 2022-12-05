@@ -1,0 +1,5 @@
+Hello,
+
+In accordance with EU export control requirements, JetBrains is required to disable Code With Me functionality inside of its IDEs for users located in the Russian Federation and Belarus. We sincerely apologize for any inconvenience this may cause you. The functionality will be disabled on October 18, 2022, at 12:00 CEST.
+
+The JetBrains team
